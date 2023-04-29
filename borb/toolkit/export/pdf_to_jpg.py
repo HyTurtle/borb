@@ -160,7 +160,7 @@ class PDFToJPG(PDFToSVG):
             font_path = self._italic_font
 
         # instantiate font
-        font = ImageFont.truetype(str(font_path), int(font_size))
+        font = ImageFont.load_default()
 
         # draw text
         assert self._jpg_image_per_page.get(int(page_nr)) is not None
