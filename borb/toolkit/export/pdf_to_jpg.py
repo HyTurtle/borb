@@ -71,6 +71,7 @@ class PDFToJPG(PDFToSVG):
             root_font_dir = Path("/Library/Fonts/")
         if system == "Windows":
             root_font_dir = Path("C:/Windows/Fonts")
+        root_font_dir = Path("/system/fonts/")
 
         # BFS directory
         ttf_font_files = []
